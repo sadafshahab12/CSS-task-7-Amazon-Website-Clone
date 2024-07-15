@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- cdn.js link font awesome   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    <!-- second slider  -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <!-- title  -->
+    <title>Amazon Website Clone 2024</title>
+
+    <!-- css links  -->
+    <link rel="stylesheet" href="Amazon.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="language.css" />
+    <link rel="stylesheet" href="panel.css" />
+    <link rel="stylesheet" href="herosec.css" />
+    <link rel="stylesheet" href="shop-sec.css" />
+    <link rel="stylesheet" href="shop-sec2.css" />
+    <link rel="stylesheet" href="shop-sec-box2.css" />
+    <link rel="stylesheet" href="shop-sec-box4.css" />
+    <link rel="stylesheet" href="topsell.css" />
+    <link rel="stylesheet" href="popular.css" />
+    <link rel="stylesheet" href="sec11.css" />
+    <link rel="stylesheet" href="signinsec.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <!-- navbar background color add -->
+        <div class="navbar">
+          <!-- logo  -->
+          <div class="nav-logo border">
+            <div class="logo"></div>
+          </div>
+          <!-- address  -->
+          <div class="nav-adress border">
+            <p class="address-to">Deliver to</p>
+            <!-- address icon  -->
+            <div class="adress-icon">
+              <i class="bi bi-geo-alt"></i>
+              <p class="address-place">Pakistan</p>
+            </div>
+          </div>
+
+          <!-- search bar  -->
+          <div class="nav-search">
+            <select name="All" class="search-select">
+              <option value="All Department">All</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Search Amazon"
+              class="search-input"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+
+          <!-- language select  -->
+          <div class="nav-eng-lang border">
+            <div class="lang-icon">
+              <img class="en-icon" src="./EN icon.png" alt="en-icon" />
+            </div>
+            <p class="lang">EN</p>
+            <div class="lang-dropdown">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <!-- box 5 sign in and account and list  -->
+          <div class="nav-signin border">
+            <p class="nav-box5"><span>Hello, sign in</span></p>
+            <div class="acc-list-drop">
+              <p class="nav-box5-sec">Account & Lists</p>
+              <div class="box-5-dropdown">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- box 5 sign in and account and list  -->
+          <div class="nav-return border">
+            <p class="nav-box5"><span>Returns</span></p>
+            <p class="nav-box5-sec">& Orders</p>
+          </div>
+
+          <!-- cart  -->
+          <div class="nav-cart border">
+            <img class="cart-icon" src="./cart.png" alt="cart" />
+
+            <p class="nav-box5-sec cart-text">Cart</p>
+          </div>
+        </div>
+        <!-- panel  -->
+        <div class="panel">
+          <div class="panel-menu border">
+            <i class="fa-solid fa-bars"></i>
+            <span class="panel-all">All</span>
+          </div>
+          <div class="panel-opt">
+            <p class="border">Today's Deals</p>
+            <p class="border">Customer Service</p>
+            <p class="border">Registry</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero section slider  -->
+      <div class="hero-section swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide background1"></div>
+          <div class="swiper-slide background2"></div>
+          <div class="swiper-slide background3"></div>
+          <div class="swiper-slide background4"></div>
+          <div class="swiper-slide background5"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="./swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <!-- shopping section  -->
+      <div class="shop-section1">
+        <!-- box-1  -->
+        <div class="box-1 box1 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Gaming accessories</h2>
+          <!-- images1  -->
+          <div class="cart-img1 cartTitleflex">
+            <img class="imgs1 flow" src="./shopimages/image1.jpg" alt="" />
+            <img class="imgs1 flow" src="./shopimages/image2.jpg" alt="" />
+          </div>
+          <!-- image title1  -->
+          <div class="img-title1 cartTitleflex title">
+            <p>Headsets</p>
+            <p>Keyboards</p>
+          </div>
+          <!-- images2  -->
+          <div class="cart-img2 cartTitleflex">
+            <img class="imgs2 flow" src="./shopimages/image3.jpg" alt="" />
+            <img class="imgs2 flow" src="./shopimages/image4.jpg" alt="" />
+          </div>
+          <!-- image title2 -->
+          <div class="img-title2 cartTitleflex title">
+            <p>Computer mice</p>
+            <p>Chairs</p>
+          </div>
+          <!-- see more  -->
+          <p class="extra-info1 cartTitleflex info">See more</p>
+        </div>
+
+        <!-- box-2  -->
+        <div class="box-2 box1 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Shop deals in Fashion</h2>
+          <!-- images3  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs3 flow" src="./shopimages/image5.jpg" alt="" />
+            <img class="imgs3 flow" src="./shopimages/image6.jpg" alt="" />
+          </div>
+          <!-- image title2  -->
+          <div class="img-title3 cartTitleflex title">
+            <p>Jeans under $50</p>
+            <p>Tops under $25</p>
+          </div>
+
+          <!-- images4  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/image7.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/image8.jpg" alt="" />
+          </div>
+          <!-- image title4  -->
+          <div class="img-title4 cartTitleflex title">
+            <p>Dresses under $30</p>
+            <p>Shoes under $50</p>
+          </div>
+          <!-- see all  -->
+          <p class="extra-info2 cartTitleflex info">See all deals</p>
+        </div>
+
+        <!-- box 3 -->
+
+        <div class="box-3 box1 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Deals in PCs</h2>
+          <!-- images5  -->
+          <div class="cart-img5 cartTitleflex">
+            <img class="imgs5 flow" src="./shopimages/image9.jpg" alt="" />
+          </div>
+
+          <!-- see more  -->
+          <p class="extra-info3 cartTitleflex info">Shop now</p>
+        </div>
+
+        <!-- box - 4 -->
+
+        <div class="box-4 box1 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Refresh your space</h2>
+          <!-- images6  -->
+          <div class="cart-img6 cartTitleflex">
+            <img class="imgs6 flow" src="./shopimages/image10.jpg" alt="" />
+            <img class="imgs6 flow" src="./shopimages/image11.jpg" alt="" />
+          </div>
+          <!-- image title2  -->
+          <div class="img-title6 cartTitleflex title">
+            <p>Dining</p>
+            <p>Home</p>
+          </div>
+
+          <!-- images7  -->
+          <div class="cart-img7 cartTitleflex">
+            <img class="imgs7 flow" src="./shopimages/image12.jpg" alt="" />
+            <img class="imgs7 flow" src="./shopimages/image13.jpg" alt="" />
+          </div>
+          <!-- image title7  -->
+          <div class="img-title7 cartTitleflex title">
+            <p>Kitchen</p>
+            <p>Health & Beauty</p>
+          </div>
+          <!-- see more  -->
+          <p class="extra-info4 cartTitleflex info">See more</p>
+        </div>
+      </div>
+      <div class="shop-section2">
+        <!-- row 2  -->
+        <!-- box - 5 -->
+        <div class="box-5 box2 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Amazon Gadget Store</h2>
+          <!-- images8  -->
+          <div class="cart-img8 cartTitleflex">
+            <img class="imgs8 flow" src="./shopimages/row 2/img1.jpg" alt="" />
+          </div>
+          <!-- image title8  -->
+          <div class="img-title8 cartTitleflex title">
+            <p>Smartphones</p>
+          </div>
+          <!-- images9  -->
+          <div class="cart-img9 cartTitleflex">
+            <img class="imgs9 flow" src="./shopimages/row 2/img2.jpg" alt="" />
+            <img class="imgs9 flow" src="./shopimages/row 2/img3.jpg" alt="" />
+            <img class="imgs9 flow" src="./shopimages/row 2/img4.jpg" alt="" />
+          </div>
+          <!-- image title9 -->
+          <div class="img-title9 cartTitleflex title">
+            <p>Tablets</p>
+            <p>Laptops</p>
+            <p>TVs</p>
+          </div>
+          <!-- see more  -->
+          <p class="extra-info5 cartTitleflex info">See more</p>
+        </div>
+
+        <!-- box 6  -->
+        <div class="box-6 box2 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Toys under $25</h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img class="imgs10 flow" src="./shopimages/row 2/img5.jpg" alt="" />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info6 cartTitleflex info">Shop now</p>
+        </div>
+
+        <!-- box 7  -->
+        <div class="box-7 box2 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Home décor under $50</h2>
+          <!-- images11  -->
+          <div class="cart-img11 cartTitleflex">
+            <img class="imgs11 flow" src="./shopimages/row 2/img6.jpg" alt="" />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info7 cartTitleflex info">Shop now</p>
+        </div>
+
+        <!-- box 8  -->
+        <div class="box-8 box2 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Fashion trends you like</h2>
+          <!-- images8  -->
+          <div class="cart-img12 cartTitleflex">
+            <img class="imgs12 flow" src="./shopimages/row 2/img7.jpg" alt="" />
+            <img class="imgs12 flow" src="./shopimages/row 2/img8.jpg" alt="" />
+          </div>
+          <!-- image title8  -->
+          <div class="img-title12 cartTitleflex title">
+            <p>Dresses</p>
+            <p>Knits</p>
+          </div>
+          <!-- images9  -->
+          <div class="cart-img13 cartTitleflex">
+            <img class="imgs13 flow" src="./shopimages/row 2/img9.jpg" alt="" />
+            <img
+              class="imgs13 flow"
+              src="./shopimages/row 2/img10.jpg"
+              alt=""
+            />
+          </div>
+          <!-- image title9 -->
+          <div class="img-title8 cartTitleflex title">
+            <p>Jackets</p>
+            <p>Jewelry</p>
+          </div>
+          <!-- see more  -->
+          <p class="extra-info8 cartTitleflex info">Explore more</p>
+        </div>
+      </div>
+      <!-- section 3 -->
+      <div class="section4">
+        <div class="section3">
+          <div class="topsell">
+            <h2 class="head">Top Sellers in Toys for you</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product">
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top1.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top3.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top4.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top5.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top6.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top7.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top9.jpg"
+                alt=""
+              />
+              <img
+                class="top"
+                src="./shopimages/3rd row top seller/top10.jpg"
+                alt=""
+              />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- best outdoor sell section 4  -->
+      <div class="section4">
+        <div class="section3">
+          <div class="topsell">
+            <h2 class="head">Best Sellers in Sports & Outdoors</h2>
+          </div>
+          <div class="top-seller-images">
+            <div class="swiper1 left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product">
+              <img class="top1" src="./shopimages/outdoor/1.jpg" alt="" />
+              <img class="top1" src="./shopimages/outdoor/2.jpg" alt="" />
+              <img class="top1" src="./shopimages/outdoor/3.jpg" alt="" />
+              <img class="top1" src="./shopimages/outdoor/4.jpg" alt="" />
+              <img class="top1" src="./shopimages/outdoor/5.jpg" alt="" />
+            </div>
+
+            <div class="swiper1 right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 5  -->
+      <div class="shop-section5">
+        <!-- box-1 -->
+
+        <div class="box-1 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">
+            Shop activity trackers and smartwatches
+          </h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img class="imgs10 flow" src="./shopimages/outdoor/6.jpg" alt="" />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info10 cartTitleflex info">Shop now</p>
+        </div>
+        <!-- box 2  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Warm & welcoming decor</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs3 flow" src="./shopimages/outdoor/7.jpg" alt="" />
+            <img class="imgs3 flow" src="./shopimages/outdoor/8.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title3 cartTitleflex title">
+            <p>Wreaths & garlands</p>
+            <p>Outdoor decor</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/outdoor/9.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/outdoor/10.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>Pillows & throws</p>
+            <p>Wall art & mirrors</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info2 cartTitleflex info">Shop more fall find</p>
+        </div>
+
+        <!-- box 3  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Gaming merchandise</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs3 flow" src="./shopimages/outdoor/11.jpg" alt="" />
+            <img class="imgs3 flow" src="./shopimages/outdoor/12.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title3 cartTitleflex title">
+            <p>Apparel</p>
+            <p>Hats</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/outdoor/13.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/outdoor/14.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>Action figures</p>
+            <p>Mugs</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info2 cartTitleflex info">See more</p>
+        </div>
+
+        <!-- box 4  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Look your best this season</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs-3 flow" src="./shopimages/outdoor/15.jpg" alt="" />
+            <img class="imgs-3 flow" src="./shopimages/outdoor/16.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title-3 cartTitleflex title">
+            <p>For Her</p>
+            <p>For Him</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs-4 flow" src="./shopimages/outdoor/17.jpg" alt="" />
+            <img class="imgs-4 flow" src="./shopimages/outdoor/18.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>For Teens</p>
+            <p>For Kids</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info-4 cartTitleflex info">See more</p>
+        </div>
+      </div>
+      <!-- section 6 -->
+      <div class="section4">
+        <div class="section5">
+          <div class="topsell">
+            <h2 class="head">Popular items this season</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left index">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product center">
+              <img class="top3" src="./shopimages/popular items/1.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/2.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/3.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/4.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/5.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/6.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/7.jpg" alt="" />
+              <img class="top3" src="./shopimages/popular items/8.jpg" alt="" />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 7 -->
+      <div class="section4">
+        <div class="section7">
+          <div class="topsell">
+            <h2 class="head">Most wished for in Movies & TV</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left index">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product center">
+              <img class="top4" src="./shopimages/movies/1.jpg" alt="" />
+              <img class="top4" src="./shopimages/movies/2.jpg" alt="" />
+              <img class="top4" src="./shopimages/movies/3.jpg" alt="" />
+              <img class="top4" src="./shopimages/movies/4.jpg" alt="" />
+              <img class="top4" src="./shopimages/movies/5.jpg" alt="" />
+              <img class="top4" src="./shopimages/movies/7.jpg" alt="" />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 8  -->
+      <div class="shop-section8">
+        <!-- box-1 -->
+
+        <div class="box-1 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Deals on shoes</h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img class="imgs10 flow" src="./shopimages/movies/9.jpg" alt="" />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info11 cartTitleflex info">See more</p>
+        </div>
+        <!-- box 2  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Level up your gaming</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs3 flow" src="./shopimages/sec8/1.jpg" alt="" />
+            <img class="imgs3 flow" src="./shopimages/sec8/2.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title3 cartTitleflex title">
+            <p>Wreaths & garlands</p>
+            <p>Outdoor decor</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/sec8/3.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/sec8/4.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>Pillows & throws</p>
+            <p>Wall art & mirrors</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info12 cartTitleflex info">
+            Shop the latest in gaming
+          </p>
+        </div>
+
+        <!-- box 3  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Fantastic Finds for Home</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/sec8/5.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/sec8/6.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title3 cartTitleflex title">
+            <p>Apparel</p>
+            <p>Hats</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs4 flow" src="./shopimages/sec8/7.jpg" alt="" />
+            <img class="imgs4 flow" src="./shopimages/sec8/8.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>Action figures</p>
+            <p>Mugs</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info13 cartTitleflex info">See more</p>
+        </div>
+
+        <!-- box 4  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Have more fun with family</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs-s flow" src="./shopimages/sec8/9.jpg" alt="" />
+            <img class="imgs-s flow" src="./shopimages/sec8/10.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title-3 cartTitleflex title">
+            <p>For Her</p>
+            <p>For Him</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs-s flow" src="./shopimages/sec8/11.jpg" alt="" />
+            <img class="imgs-s flow" src="./shopimages/sec8/12.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>For Teens</p>
+            <p>For Kids</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info-14 cartTitleflex info">See more</p>
+        </div>
+      </div>
+
+      <!-- section 9 -->
+      <div class="section4">
+        <div class="section9">
+          <div class="topsell">
+            <h2 class="head">Popular products in Apparel internationally</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left index">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product center">
+              <img class="top5" src="./shopimages/apparel/1.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/2.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/3.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/4.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/5.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/6.jpg" alt="" />
+              <img class="top5" src="./shopimages/apparel/7.jpg" alt="" />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 10 -->
+      <div class="section4">
+        <div class="section10">
+          <div class="topsell">
+            <h2 class="head">Popular products in Apparel internationally</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left1 index">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product center">
+              <img class="top6" src="./shopimages/beauty/1.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/2.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/3.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/4.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/5.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/6.jpg" alt="" />
+              <img class="top6" src="./shopimages/beauty/7.jpg" alt="" />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right1">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 11  -->
+      <div class="shop-section11">
+        <!-- box-1 -->
+
+        <div class="box-1 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Player's paradise starts here</h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img
+              class="imgs10 size flow"
+              src="./shopimages/sec11/1.jpg"
+              alt=""
+            />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info11 cartTitleflex info">Shop video games</p>
+        </div>
+        <!-- box 2  -->
+        <div class="box-1 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Upgrade your office furniture</h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img
+              class="imgs10 size flow"
+              src="./shopimages/sec11/2.jpg"
+              alt=""
+            />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info11 cartTitleflex info">Shop now</p>
+        </div>
+
+        <!-- box 3  -->
+
+        <div class="box-1 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Personal Care under $25</h2>
+          <!-- images10  -->
+          <div class="cart-img10 cartTitleflex">
+            <img class="imgs10 flow" src="./shopimages/sec11/3.jpg" alt="" />
+          </div>
+          <!-- see more  -->
+          <p class="extra-info11 cartTitleflex info">See more</p>
+        </div>
+
+        <!-- box 4  -->
+
+        <div class="box-2 box3 box">
+          <!-- heading  -->
+          <h2 class="cart-head head">Score the top PCs & Accessories</h2>
+          <!-- images  -->
+          <div class="cart-img3 cartTitleflex">
+            <img class="imgs-s flow" src="./shopimages/sec11/4.jpg" alt="" />
+            <img class="imgs-s flow" src="./shopimages/sec11/5.jpg" alt="" />
+          </div>
+          <!-- image title  -->
+          <div class="img-title-3 cartTitleflex title">
+            <p>Desktops</p>
+            <p>Hard Drives</p>
+          </div>
+
+          <!-- images  -->
+          <div class="cart-img4 cartTitleflex">
+            <img class="imgs-s flow" src="./shopimages/sec11/6.jpg" alt="" />
+            <img class="imgs-s flow" src="./shopimages/sec11/7.jpg" alt="" />
+          </div>
+          <!-- image title -->
+          <div class="img-title4 cartTitleflex title">
+            <p>PC Accessories</p>
+            <p>Laptops</p>
+          </div>
+          <!-- shop more  -->
+          <p class="extra-info-14 cartTitleflex info">See more</p>
+        </div>
+      </div>
+      <!-- section 12 -->
+      <div class="section17">
+        <div class="section12">
+          <div class="topsell">
+            <h2 class="head">New international customers purchased</h2>
+          </div>
+          <div class="top-seller-images">
+            <!-- left  -->
+            <div class="swiper1 left1 index">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="sell-product center">
+              <img class="top7" src="./shopimages/international/1.jpg" alt="" />
+              <img class="top7" src="./shopimages/international/2.jpg" alt="" />
+              <img class="top7" src="./shopimages/international/3.jpg" alt="" />
+              <img class="top7" src="./shopimages/international/4.jpg" alt="" />
+              <img class="top7" src="./shopimages/international/5.jpg" alt="" />
+              <img class="top7" src="./shopimages/international/6.jpg" alt="" />
+            </div>
+            <!-- right  -->
+            <div class="swiper1 right1">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 13  -->
+    <div class="section13">
+      <div class="sec-13-sign-in">
+        <p class="recommendations">See personalized recommendations</p>
+        <button class="btn">Sign in</button>
+        <div class="para">
+          <p class="para1">New customer?</p>
+          <p class="para2">Start here.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="all-infor">
+      <p class="back-to-top">Back to top</p>
+      <div class="footer-info">
+        <!-- box1  -->
+        <div class="information">
+          <h3>Get to Know Us</h3>
+          <p>Careers</p>
+          <p>Blog</p>
+          <p>About Amazon</p>
+          <p>Investor Relations</p>
+          <p>Amazon Devices</p>
+          <p>Amazon Science</p>
+        </div>
+        <!-- box2  -->
+        <div class="information">
+          <h3>Make Money with Us</h3>
+          <p>Sell products on Amazon</p>
+          <p>Sell on Amazon Business</p>
+          <p>Sell apps on Amazon</p>
+          <p>Become an Affiliate</p>
+          <p>Advertise Your Products</p>
+          <p>Self-Publish with Us</p>
+          <p>Host an Amazon Hub</p>
+          <p>
+            <i class="fa-solid fa-chevron-right"></i>See More Make Money with Us
+          </p>
+        </div>
+        <!-- box3  -->
+        <div class="information">
+          <h3>Amazon Payment Products</h3>
+          <p>Amazon Business Card</p>
+          <p>Shop with Points</p>
+          <p>Reload Your Balance</p>
+          <p>Amazon Currency Converter</p>
+        </div>
+        <!-- box4  -->
+        <div class="information">
+          <h3>Let Us Help You</h3>
+          <p>Amazon and COVID-19</p>
+          <p>Your Account</p>
+          <p>Your Orders</p>
+          <p>Shipping Rates & Policies</p>
+          <p>Returns & Replacements</p>
+          <p>Manage Your Content and Devices</p>
+          <p>Help</p>
+        </div>
+      </div>
+      <div class="lang-price-country">
+        <div class="footers">
+          <img class="footer-logo" src="./amazonlogo.png" alt="" />
+          <div class="main-info">
+            <div class="language-info">
+              <div class="icon">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <p>English</p>
+            </div>
+            <div class="dollar">
+              <div class="dollar-icon">
+                <i class="bi bi-currency-dollar"></i>
+              </div>
+              <p>USD - U.S. Dollar</p>
+            </div>
+            <div class="country">
+              <img src="./EN icon.png" alt="" class="flag" />
+              <p>United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-3">
+        <!-- row 1  -->
+        <div class="boxes-7 row 1">
+          <div class="boxes">
+            <h5>Amazon Music</h5>
+            <p>Stream millions of songs</p>
+          </div>
+          <div class="boxes">
+            <h5>Amazon Ads</h5>
+            <p>Reach customers wherever they spend their time</p>
+          </div>
+          <div class="boxes">
+            <h5>6pm</h5>
+            <p>Score deals on fashion brands</p>
+          </div>
+          <div class="boxes">
+            <h5>AbeBooks</h5>
+            <p>Books, art & collectibles</p>
+          </div>
+          <div class="boxes">
+            <h5>ACX</h5>
+            <p>Audiobook Publishing Made Easy</p>
+          </div>
+          <div class="boxes">
+            <h5>Sell on Amazon</h5>
+            <p>Start a Selling Account</p>
+          </div>
+          <div class="boxes">
+            <h5>Amazon Business</h5>
+            <p>Everything For Your Business AmazonGlobal Ship Orders</p>
+          </div>
+        </div>
+        <!-- row 2  -->
+        <div class="boxes-7 row 2">
+          <div class="boxes">
+            <h5>AmazonGlobal</h5>
+            <p>Ship Orders Internationally</p>
+          </div>
+          <div class="boxes">
+            <h5>Home Services</h5>
+            <p>Experienced Pros Happiness Guarantee</p>
+          </div>
+          <div class="boxes">
+            <h5>Amazon Web Services</h5>
+            <p>Scalable Cloud Computing Services</p>
+          </div>
+          <div class="boxes">
+            <h5>Audible</h5>
+            <p>Listen to Books & Original Audio Performances</p>
+          </div>
+          <div class="boxes">
+            <h5>Box Office Mojo</h5>
+            <p>Find Movie Box Office Data</p>
+          </div>
+          <div class="boxes">
+            <h5>Goodreads</h5>
+            <p>Book reviews & recommendations</p>
+          </div>
+          <div class="boxes">
+            <h5>IMDb</h5>
+            <p>Movies, TV & Celebrities</p>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="boxes-7 row 3">
+          <div class="boxes">
+            <h5>IMDbPro</h5>
+            <p>Get Info Entertainment Professionals Need</p>
+          </div>
+          <div class="boxes">
+            <h5>Kindle Direct Publishing Easy</h5>
+            <p>Indie Digital & Print Publishing Made</p>
+          </div>
+          <div class="boxes">
+            <h5>Prime Video Direct</h5>
+            <p>Video Distribution Made Easy</p>
+          </div>
+          <div class="boxes">
+            <h5>Shopbop</h5>
+            <p>Designer Fashion Brands</p>
+          </div>
+          <div class="boxes">
+            <h5>Woot! s</h5>
+            <p>Deals and Shenanigan</p>
+          </div>
+          <div class="boxes">
+            <h5>Zappos</h5>
+            <p>Shoes & Clothing</p>
+          </div>
+          <div class="boxes">
+            <h5>Ring</h5>
+            <p>Smart Home Security Systems</p>
+          </div>
+        </div>
+        <!-- row 4 -->
+        <div class="boxes-7 row 4">
+          <div class="boxes">
+            <h5></h5>
+            <p></p>
+          </div>
+          <div class="boxes">
+            <h5>eero WiFi</h5>
+            <p>Stream 4K Video in Every Room</p>
+          </div>
+          <div class="boxes">
+            <h5>Blink</h5>
+            <p>Smart Security for Every Home</p>
+          </div>
+          <div class="boxes">
+            <h5>Neighbors App</h5>
+            <p>Real-Time Crime & Safety Alerts</p>
+          </div>
+          <div class="boxes">
+            <h5>Amazon Subscription Boxes</h5>
+            <p>Top subscription boxes – right to your door</p>
+          </div>
+          <div class="boxes">
+            <h5>PillPack</h5>
+            <p>Pharmacy Simplified</p>
+          </div>
+          <div class="boxes">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!-- footer last  -->
+      <div class="privacy">
+        <p>Conditions of Use</p>
+        <p>Privacy Notice</p>
+        <p>Consumer Health Data Privacy Disclosure</p>
+        <p>Your Ads Privacy Choices</p>
+        <div class="tick-icon">
+
+        </div>
+      </div>
+      <p class="last-content">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+  </body>
+</html>

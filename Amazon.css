@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box; /* adjust content if increase height and width of border*/
+}
+/* box 1 */
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-logo {
+  height: 50px;
+  width: 113px;
+  cursor: pointer;
+}
+.logo {
+  background-image: url(./Amazon-Logo-White@zeevector.png);
+  background-size: 100px;
+  height: 50px;
+  width: 113px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.border {
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+.border:hover {
+  border: 1px solid white;
+}
+/* .box 2  */
+.address-to {
+  color: #cccccc;
+  font-size: 0.75rem;
+  margin-left: 19px;
+  
+}
+.address-place {
+  font-size: 0.95rem;
+  margin-left: 3px;
+  font-weight: 800;
+}
+.adress-icon {
+  display: flex;
+  align-items: center;
+}
+.nav-adress {
+  padding: 5px 9px;
+  cursor: pointer;
+}

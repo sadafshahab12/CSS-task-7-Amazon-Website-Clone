@@ -1,0 +1,65 @@
+/*box 4 */
+.nav-eng-lang{
+    display: flex;
+    width: 71px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 7px 0px;
+    cursor: pointer;
+}
+.lang{
+   font-size: 14px;
+   font-weight: 800;
+    padding-top: 7px;
+}
+.en-icon{
+    width: 21px;
+    height: 26px;
+    margin: 2px 0px 0px 0;
+}
+.lang-dropdown{
+    color: #8d8383;
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    
+}
+
+/*box 5 */
+.nav-signin{
+    padding: 5px 9px;
+    cursor: pointer;
+}
+.nav-box5{
+    font-size: 0.8rem;
+}
+.nav-box5-sec{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+.acc-list-drop{
+    display: flex;
+ 
+}
+.box-5-dropdown{
+    font-size: 0.78rem;
+    color: grey;
+    padding: 3px 0px 0px 4px;
+}
+.nav-return{
+    padding: 5px 9px;
+    cursor: pointer;
+}
+/*box 6 */
+.nav-cart{
+    display: flex;
+    padding: 3px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 2.65rem;
+}
+.cart-text{
+    padding-top: 16px;
+}

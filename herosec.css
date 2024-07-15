@@ -1,0 +1,83 @@
+
+.background1 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(./slider1.jpg);
+    height: 544px;
+    background-size: 1316px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.background2 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(./slider2.jpg);
+    height: 544px;
+    background-size: 1316px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.background3 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(./slider3.jpg);
+    height: 544px;
+    background-size: 1316px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.background4 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(./slider4.jpg);
+    height: 544px;
+    background-size: 1316px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.background5 {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(./slider5.jpg);
+    height: 544px;
+    background-size: 1316px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  top: 0%;
+  height: 250px;
+  width: 80px;
+  color: #040303;
+  text-shadow: -4px 0px white;
+  margin: 0px -10px;
+  cursor: pointer;
+}
+.swiper-button-prev {
+  text-shadow: 3px 0px white;
+  top: 0%;
+  height: 250px;
+  width: 80px;
+  color: #040303;
+  margin: 0px -10px;
+  cursor: pointer;
+}
+.swiper-pagination {
+  display: none;
+}
